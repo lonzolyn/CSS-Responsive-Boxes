@@ -1,3 +1,87 @@
 body {
-  background: papayawhip;
+  background: rgb(212, 209, 209);
 }
+
+  .container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+  }
+
+  .a{
+    margin: 10px;
+    border:solid;
+    text-align: center;
+    background-color: silver;
+    height: 10vh;
+    width: 100%;
+  }
+
+  .b{
+    margin: 10px;
+    border:solid;
+    text-align: center;
+    background-color: silver;
+    height: 35vh;
+    width: 100%;
+    
+  }
+
+  .c,.d,.e { 
+    margin: auto;
+    width: 30%;
+    height: 30vh;
+    border: solid;
+    background-color: silver;
+    text-align: center;
+  }
+
+  .f{
+    margin: 10px;
+    border:solid;
+    text-align: center;
+    background-color: silver;
+    height: 10vh;
+    width: 100%;
+
+  }
+
+  @media (min-width: 800px){
+    .container{
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      
+    }
+    .container>*{
+      margin: 10px;
+      background-color: white;
+      border:solid;
+      text-align: center;
+    }
+
+    .a,.b{
+      height: 25vh;
+  }
+    .a{
+      width: 100%;
+    }
+
+    .b{
+      width: 75%;
+    }
+    .c,.d,.e{
+      height: 40vh;
+      width: 24%;
+      order: 3;
+      transform: translateY(-325px)
+    }
+    
+    .f{
+      height: 67.5vh;
+      width: 20%;
+      align-self: flex-end;
+      order: 2;
+    }
+  }
